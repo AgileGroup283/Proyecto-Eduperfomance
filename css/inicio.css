@@ -1,0 +1,181 @@
+:root {
+    --color-fondo-principal: #326C5D;
+    --color-texto-claro: white;
+    --color-boton: #326C5D;
+    --color-borde-boton: #8DC9B7;
+    --color-puntos-inactivos: #508A7A;
+    --color-circulos-fondo: rgba(255, 255, 255, 0.1);
+    --color-circulos-esquina: rgba(255, 255, 255, 0.08);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    background-color: var(--color-fondo-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenedor-bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center;     /* Centra el contenido horizontalmente */
+    text-align: center;      /* Asegura que el texto también se centre */
+    width: 100%;             /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 100vh;           /* Asegura que ocupe toda la altura visible */
+    position: relative;
+}
+
+/* Círculos de fondo aleatorios */
+.contenedor-bienvenida::before,
+.contenedor-bienvenida::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-circulos-fondo);
+    border-radius: 50%;
+    z-index: 0; /* Aseguramos que estén bien al fondo, detrás de todo */
+}
+
+.contenedor-bienvenida::before {
+    width: 250px;
+    height: 250px;
+    top: 5%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor-bienvenida::after {
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    right: 10%;
+    transform: translate(50%, 50%);
+}
+
+/* Otro círculo más grande en la esquina superior derecha del body */
+body::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-circulos-esquina);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
+.logo-circle {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Aseguramos que el logo esté en primer plano */
+}
+
+.logo-imagen {
+    max-width: 80%;
+    max-height: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.titulo-principal {
+    color: var(--color-texto-claro);
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    z-index: 2; /* Aseguramos que el título esté en primer plano */
+}
+
+.subtitulo {
+    color: var(--color-texto-claro);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    z-index: 2; /* Aseguramos que el subtítulo esté en primer plano */
+}
+
+.btn-comenzar {
+    background-color: var(--color-boton);
+    color: var(--color-texto-claro);
+    padding: 12px 40px;
+    border: 2px solid var(--color-borde-boton);
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 50px;
+    z-index: 2; /* Aseguramos que el botón esté en primer plano */
+}
+
+.btn-comenzar:hover {
+    background-color: #246355;
+    border-color: #9cdac4;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .logo-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .logo-imagen {
+        max-width: 70%;
+        max-height: 70%;
+    }
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+    .subtitulo {
+        font-size: 1rem;
+    }
+    .btn-comenzar {
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+    .contenedor-bienvenida::before {
+        width: 150px;
+        height: 150px;
+        top: 5%;
+        left: 5%;
+    }
+    .contenedor-bienvenida::after {
+        width: 120px;
+        height: 120px;
+        bottom: 5%;
+        right: 5%;
+    }
+    body::before {
+        width: 200px;
+        height: 200px;
+        top: -40px;
+        right: -40px;
+    }
+    .indicadores-inferior {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .cuadros-esquina {
+        bottom: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+   
+}

@@ -1,0 +1,205 @@
+:root {
+    --color-principal-verde: #326C5D;
+    --color-secundario-verde: #508A7A;
+    --color-terciario-verde: #6EA998;
+    --color-claro-verde: #8DC9B7;
+    --color-muy-claro-verde: #ADEAD8;
+
+    --color-fondo-claro: #f8f8f8;
+    --color-texto-oscuro: #333;
+    --color-texto-claro: white;
+    --color-borde-suave: #ddd;
+    --color-enlace-accion: #3498db;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #326c5d;
+    color: var(--color-texto-oscuro);
+    line-height: 1.6;
+}
+
+a {
+    color: white !important;
+}
+
+
+.navbar-brand>img {
+    width: 55px;
+    ;
+}
+
+.navbar-main .active {
+    text-decoration: underline wavy var(--color-purple);
+    text-underline-offset: 9px;
+}
+
+.navbar-main {
+    background-color: #6ea998;
+}
+
+.img-logo {
+    width: 40px;
+    border: none;
+}
+
+.contenedor-general {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 120px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-faq {
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header-faq h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-faq p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* --- Estilos del Menú Desplegable (AJUSTADOS PARA BOOTSTRAP) --- */
+.dropdown-menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.dropdown-toggle-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-menu {
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    right: 0; /* Alineado a la derecha del botón */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-menu .dropdown-item { /* Estilos para los enlaces dentro del dropdown */
+    color: var(--color-texto-oscuro);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--color-muy-claro-verde);
+    color: var(--color-principal-verde);
+}
+
+.contenido-faq {
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.categoria-faq {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color-borde-suave);
+    padding-bottom: 20px;
+}
+
+.categoria-faq:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.categoria-faq h2 {
+    color: var(--color-secundario-verde);
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-claro-verde);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.pregunta-respuesta {
+    background-color: #fefefe;
+    border: 1px solid var(--color-borde-suave);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.pregunta-respuesta h3 {
+    color: var(--color-principal-verde);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.pregunta-respuesta p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.footer-faq {
+    background-color: var(--color-principal-verde);
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .contenedor-general {
+        margin: 0 10px;
+        box-shadow: none;
+    }
+    .header-faq {
+        padding: 30px 15px;
+    }
+    .header-faq h1 {
+        font-size: 2rem;
+    }
+    .header-faq p {
+        font-size: 1rem;
+    }
+    .dropdown-menu-container {
+        top: 15px;
+        right: 15px;
+    }
+    .dropdown-toggle-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}

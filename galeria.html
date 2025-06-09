@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Actividades - EduPerformance</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Tu archivo CSS personalizado para esta página -->
+    <link rel="stylesheet" href="css/galeria.css">
+    <!-- Para iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contenedor-general">
+        <header class="header-galeria">
+            <!-- Título de la página -->
+            <h1>Nuestra Galería</h1>
+            <p>Momentos y actividades destacadas de EduPerformance.</p>
+
+            <!-- Menú Desplegable con Bootstrap -->
+            <div class="dropdown-menu-container">
+                <button class="dropdown-toggle-btn dropdown-toggle" type="button" id="dropdownMenuButtonGaleria" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonGaleria">
+                    <li><a class="dropdown-item" href="recursos.html">Recursos y Material de Estudio</a></li>
+                    <li><a class="dropdown-item" href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="inicio.html">Cerrar sesion</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="contenido-galeria">
+            <section class="grid-galeria">
+                <!-- Item de Galería 1 -->
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                    <img src="img/Taller_programacion.jpeg" alt="Taller de Programación" class="img-thumbnail">
+                </div>
+
+                <!-- Item de Galería 2 -->
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                    <img src="img/Orientacion.jpeg" alt="Orientación Universitaria" class="img-thumbnail">
+                </div>
+
+                <!-- Item de Galería 3 -->
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                    <img src="img/Clase_matematicas.jpeg" alt="Clase de Matemáticas" class="img-thumbnail">
+                </div>
+
+                <!-- Item de Galería 4 -->
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#imageModal4">
+                    <img src="img/Hackathon.jpeg" alt="Hackathon" class="img-thumbnail">
+                </div>
+
+                <!-- Item de Galería 5 -->
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#imageModal5">
+                    <img src="img/Coaching.jpeg" alt="Coaching Personalizado" class="img-thumbnail">
+                </div>
+
+                <!-- Item de Galería 6 -->
+                <div class="galeria-item" data-bs-toggle="modal" data-bs-target="#imageModal6">
+                    <img src="img/Graduacion.jpeg" alt="Graduación" class="img-thumbnail">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-galeria">
+            <p>&copy; 2025 EduPerformance. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Modal 1: Taller de Programación Avanzada -->
+    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel1">Taller de Programación Avanzada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Taller_programacion.jpeg" class="img-fluid" alt="Taller de Programación">
+                    <p class="mt-3">Sesión práctica de codificación con nuestros estudiantes de programación. Enfocados en desarrollo web moderno.</p>
+                    <p class="text-muted small">Fecha: 15 de Mayo, 2025</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Evento de Orientación Universitaria -->
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel2">Evento de Orientación Universitaria</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Orientacion.jpeg" class="img-fluid" alt="Orientación Universitaria">
+                    <p class="mt-3">Nuestros expertos guiando a los estudiantes en sus futuras carreras académicas y profesionales.</p>
+                    <p class="text-muted small">Fecha: 10 de Abril, 2025</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Clase de Matemáticas Interactivas -->
+    <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel3">Clase de Matemáticas Interactivas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Clase_matematicas.jpeg" class="img-fluid" alt="Clase de Matemáticas">
+                    <p class="mt-3">Aprendiendo conceptos complejos de matemáticas de forma divertida y colaborativa.</p>
+                    <p class="text-muted small">Fecha: 22 de Marzo, 2025</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Hackathon Anual EduPerformance -->
+    <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel4">Hackathon Anual EduPerformance</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Hackathon.jpeg" class="img-fluid" alt="Hackathon">
+                    <p class="mt-3">Desarrollando soluciones innovadoras en un ambiente de sana competencia y aprendizaje intensivo.</p>
+                    <p class="text-muted small">Fecha: 01 de Marzo, 2025</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Sesión de Coaching Personalizado -->
+    <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel5">Sesión de Coaching Personalizado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Coaching.jpeg" class="img-fluid" alt="Coaching Personalizado">
+                    <p class="mt-3">Asesorías individuales para el desarrollo de habilidades blandas y planificación de carrera.</p>
+                    <p class="text-muted small">Fecha: 05 de Febrero, 2025</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Graduación Generación 2024 -->
+    <div class="modal fade" id="imageModal6" tabindex="-1" aria-labelledby="imageModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel6">Graduación Generación 2024</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Graduacion.jpeg" class="img-fluid" alt="Graduación">
+                    <p class="mt-3">Celebrando los logros de nuestros graduados, listos para enfrentar nuevos retos.</p>
+                    <p class="text-muted small">Fecha: 20 de Diciembre, 2024</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eJ5L0S34I9eFw" crossorigin="anonymous"></script>
+</body>
+</html>

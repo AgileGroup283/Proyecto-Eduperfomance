@@ -1,0 +1,244 @@
+:root {
+    /* Colores basados en la paleta proporcionada */
+    --color-principal-verde: #326C5D;
+    --color-fondo-claro: #F0F2F5; /* Este color ya no se usa como fondo principal */
+    --color-texto-enlace: #326C5D;
+    --color-input-fondo: #f0f0f0;
+    --color-input-placeholder: #a0a0a0;
+
+    /* Variables de color para los círculos de fondo */
+    --color-circulos-fondo-transparente: rgba(255, 255, 255, 0.1);
+    --color-circulos-esquina-transparente: rgba(255, 255, 255, 0.08);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    background-color: var(--color-principal-verde); /* Fondo principal de body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Pseudo-elementos para los círculos de fondo en login.html */
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-circulos-fondo-transparente); /* Usamos la variable para los círculos */
+    border-radius: 50%;
+    z-index: 1; /* Aumentamos el z-index de los círculos de fondo del body */
+}
+
+/* Ajusta las posiciones y tamaños para login.html */
+body::before { /* Este será el círculo superior-izquierda */
+    width: 250px;
+    height: 250px;
+    top: 5%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+body::after { /* Este será el círculo inferior-derecha */
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    right: 10%;
+    transform: translate(50%, 50%);
+}
+
+.contenedor-fondo {
+    /* Mantenemos estas propiedades ya que centran el contenido principal */
+    position: relative; /* Asegura que el z-index de sus hijos sea relativo a él */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* El pseudo-elemento del contenedor-fondo se usará para el círculo grande de la esquina */
+.contenedor-fondo::before {
+    content: '';
+    position: absolute;
+    top: -80px; /* Sale más de la pantalla por arriba */
+    right: -80px; /* Sale más de la pantalla por la derecha */
+    width: 400px; /* Mucho más grande */
+    height: 400px; /* Mucho más grande */
+    background-color: var(--color-circulos-esquina-transparente); /* Color un poco más oscuro y semi-transparente */
+    border-radius: 50%;
+    z-index: 1; /* También un z-index bajo pero por encima del body original */
+}
+
+/* Estilos para el botón de regresar */
+.boton-regresar-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20; /* Z-index alto para que esté encima de todo */
+}
+
+.btn-regresar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-regresar:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.titulo-plataforma {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    z-index: 10; /* Z-index alto para que esté sobre los fondos */
+}
+
+.card-login {
+    background-color: #ffffff; /* Aseguramos el fondo blanco */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 15; /* Aumentamos el z-index de la tarjeta para que esté encima de los círculos de fondo y el título */
+}
+
+/* Ajustes de Bootstrap sobreescritos o complementados */
+.form-label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333; /* El color del texto del label es oscuro, no blanco */
+    font-weight: bold;
+}
+
+.form-control {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-input-fondo);
+    font-size: 1rem;
+    color: #555;
+    padding: 12px 10px;
+}
+
+.form-control::placeholder {
+    color: var(--color-input-placeholder);
+}
+
+.opciones-login {
+    font-size: 0.9rem;
+}
+
+.form-check-input {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+.form-check-label {
+    font-weight: normal;
+    color: #555;
+}
+
+.enlace-olvide {
+    color: var(--color-texto-enlace);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-olvide:hover {
+    text-decoration: underline;
+}
+
+.btn-iniciar-sesion {
+    background-color: var(--color-principal-verde);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-iniciar-sesion:hover {
+    background-color: #246355;
+}
+
+.footer-card {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.punto {
+    width: 10px;
+    height: 10px;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.punto.activo {
+    background-color: var(--color-principal-verde);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 500px) {
+    .card-login {
+        margin: 20px;
+        padding: 20px;
+    }
+    .titulo-plataforma {
+        font-size: 2rem;
+    }
+    .boton-regresar-container {
+        top: 10px;
+        left: 10px;
+    }
+    .btn-regresar {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    /* Ajustes para los círculos de fondo en móviles */
+    body::before {
+        width: 150px;
+        height: 150px;
+        top: 5%;
+        left: 5%;
+    }
+    body::after {
+        width: 120px;
+        height: 120px;
+        bottom: 5%;
+        right: 5%;
+    }
+    .contenedor-fondo::before { /* Este es el círculo grande de la esquina */
+        width: 200px;
+        height: 200px;
+        top: -40px;
+        right: -40px;
+    }
+}

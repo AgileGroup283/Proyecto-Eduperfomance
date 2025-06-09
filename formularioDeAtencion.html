@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!--Estilos Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/formularioDeAtencion.css">
+</head>
+
+<body>
+
+    <!--Barra de navegacion-->
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-main text-white">
+        <div class="container">
+            <!-- Branding -->
+            <a href="#" class="navbar-brand">
+                <img src="./Img/book.png" alt="Logo" class="img-fluid">
+            </a><span class="h4">EduPerformance</span>
+            <!-- Btn -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Barra de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  Items-->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav ms-auto flex-column flex-md-row">
+                    <a href="./forms.html" class="nav-link active">Registrarse</a>
+                    <a href="/login.html" class="nav-link">Iniciar sesion</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 mb-5">
+    </div>
+
+    <div class="container-master">
+
+        <header class="py-4">
+            <h1 class="texto-header">Contáctanos</h1>
+            <p class="texto-header">Estamos aquí para ayudarte. Déjanos tu mensaje y te responderemos pronto</p>
+        </header>
+
+        <div class="contenedor-pregunta">
+            <h3 class="texto-pregunta">¿Tienes alguna pregunta?</h3>
+            <p class="texto-pregunta">Completa el formulario a continuación y nuestro equipo se pondrá en
+                contacto contigo lo antes posible.
+                Valoramos tu comunicación y nos esforzamos por responder dentro de las próximas 24 horas.</p>
+        </div>
+
+        <div class="container-p">
+
+            <div class="container-h shadow">
+
+                <h4>Datos Personales</h4>
+                <hr>
+                <h6 class="py-2">Los datos marcados con (*) son campos oblicatorios!</h6>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label for="name" class="form-label">Nombre Completo <span class="required">*</span></label>
+                        <input type="text" name="name" id="name" class="form-control" required
+                            aria-describedby="nombre-error">
+                        <div class="error-message" id="name-error"></div>
+
+                    </div>
+
+                    <div class="col-6">
+                        <label for="email" class="form-label">Correo Electronico <span class="required">*</span></label>
+                        <input type="email" name="email" id="email" class="form-control" required
+                            aria-describedby="email-error">
+                        <div class="error-message" id="telefono-error"></div>
+                    </div>
+
+                </div>
+
+                <div class="row py-3">
+                    <div class="col-6">
+                        <label for="telefono" class="form-label">Número De Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" class="form-control" required
+                            aria-describedby="telefono-error">
+                        <div class="error-message" id="name-error"></div>
+
+                    </div>
+
+                    <div class="col-6">
+                        <label for="asunto" class="form-label">Asunto<span class="required">*</span></label>
+                        <select name="asunto" id="asunto" class="form-select" required aria-describedby="asunto-error">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="soporte">Soporte Técnico</option>
+                            <option value="ventas">Información de Ventas</option>
+                            <option value="colaboracion">Propuesta de Colaboración</option>
+                            <option value="reclamo">Reclamo o Queja</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <div class="error-message" id="asunto-error"></div>
+                    </div>
+
+                </div>
+
+                <h4>Mensaje</h4>
+                <hr>
+
+                <div class="row">
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Escribe tu mensaje <span
+                                class="required">*</span></label>
+                        <textarea class="form-control" name="mensaje" id="mensaje"
+                            placeholder="Escribe aquí tu mensaje detallado..." required aria-describedby="mensaje-error"
+                            rows="6"></textarea>
+                        <div class="error-message" id="mensaje-error"></div>
+                    </div>
+                </div>
+
+                <div class="my-2">
+                    <input type="checkbox" name="privacidad" id="privacidad" required>
+                    <label for="privacidad">Acepto los <a href="#" style="color:rgb(3, 110, 250)">Terminos y
+                            condiciones</a> y el tratamiento de datos personales <span class="required">*</span></label>
+                </div>
+
+                <div class="my-1">
+                    <input type="checkbox" name="newsletter" id="newsletter" required>
+                    <label for="newsletter">Deseo recibir noticias y actualizaciones por medio de correo
+                        electronico.<span class="required">*</span></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn my-2">Enviar mensaje</button>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Sección del footer general-->
+
+    <footer class=" text-white py-4">
+        <div class="container">
+            <nav class="row justify-content-center">
+                <!-- Logo -->
+                <a href=""
+                    class="col-12 col-md-3 text-reset d-flex align-items-center justify-content-center mb-3 mb-md-0 text-decoration-none text-uppercase fw-bold">
+                    <img src="./Img/book.png" alt="logo Eduperformance" class="img-logo mr-2 mx-2">
+                    EduPerformance
+                </a>
+                <!-- menu -->
+                <ul class="col-5 col-md-6 list-unstyled text-center align-self-center">
+                    <li class="font-weight-bold">Desarrollado y diseñado por el equipo EduPerformance 2024 © no
+                        copiar</li>
+                </ul>
+                <!-- social networks -->
+                <ul class="col-10 col-md-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase">redes Sociales</li>
+                    <li class="d-flex justify-content-between">
+                        <!-- FB -->
+                        <a href="#" class="text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="#" class="text-reset"><i class="fab  fa-twitter"></i></a>
+                        <!-- Instagram -->
+                        <a href="#" class="text-reset"><i class="fab fa-instagram"></i></a>
+                        <!-- Pinterest -->
+                        <a href="#" class="text-reset"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!--Logica Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        rossorigin="anonymous"></script>
+</body>
+
+</html>

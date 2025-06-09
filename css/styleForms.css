@@ -1,0 +1,23 @@
+body {
+    color: rgb(4, 56, 87);
+    background-color: #326c5d;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+.left {
+    border: solid 20px rgb(83, 152, 222);
+}
+
+footer {
+    background-color:rgb(56, 95, 117);
+}
+
+
+.img-logo{
+    width: 40px;
+    border: none;
+}

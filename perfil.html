@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/perfil.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-main text-white">
+        <div class="container">
+            <!-- Branding -->
+            <a href="navBarNew.html" class="navbar-brand">
+                <img src="./Img/book.png" alt="Logo" class="img-fluid">
+                <span class="h4">EduPerformance</span></a>
+            <!-- Btn -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Barra de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  Items-->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav ms-auto flex-column flex-md-row">
+                    <a href="navBarNew.html" class="nav-link active">Menu</a>
+                    <a href="formularioDeAtencion.html" class="nav-link">Contacto</a>
+                    <a href="recursos.html" class="nav-link">Curso</a>
+                    <a href="home2.html" class="nav-link">Cerrar sesion</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5 bg-light rounded-3">
+        <div class="d-flex row align-items-center mb-3 principal bg-success-subtle text-center rounded-3">
+            <h2>¡Hola, Estudiante!</h2>
+            <div class="d-flex align-items-center">
+                <img src="./Img/perfil/foto-estudiante-2.png" alt="Avatar" class="rounded-circle img-fluid" width="100"
+                    height="100">
+                <span class="ms-2 fw-bold">Nombre Apellido</span>
+            </div>
+        </div>
+        <div class="row contenedor">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link nav-link-principal active text-primary-emphasis border border-success-subtle"
+                            id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                            aria-controls="home-tab-pane" aria-selected="true">Datos Estudiante</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link nav-link-principal text-primary-emphasis border border-success-subtle"
+                            id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+                            role="tab" aria-controls="profile-tab-pane" aria-selected="false">Historial
+                            academico</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link nav-link-principal border border-success-subtle text-primary-emphasis "
+                            id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+                            role="tab" aria-controls="contact-tab-pane" aria-selected="false">Cursos
+                            complementarios</button>
+                    </li>
+                </ul>
+                <div class="tab-content " id="myTabContent">
+                    <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel"
+                        aria-labelledby="home-tab" tabindex="0">
+                        <div class="container ">
+                            <div class="row shadow my-3 p-3 rounded-3">
+                                <div class="col-md-6">
+                                    <h5 class="fw-bold">Datos del estudiante</h5>
+                                    <p>Nombre Nombre Apellido Apellido</p>
+                                    <p><strong>Correo:</strong> usuario@dominio.com</p>
+                                    <p><strong>Telefono:</strong> 300-000-00-00</p>
+                                    <p><strong>Dirección:</strong> Calle 00 # 00 -00 </p>
+                                    <button class="btn btn-outline-primary">Completar perfil</button>
+                                    <div class="mt-4">
+                                        <h6 class="text-success">Sigue completando tu perfil y desbloquea beneficios
+                                        </h6>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;">
+                                                75%</div>
+                                        </div>
+                                        <p class="mt-2 text-muted">
+                                            Al tener actualizado tu perfil al 100% podremos enlazarte con oportunidades
+                                            de empleo de acuerdo a tu información.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center ">
+                                        <h4 class="text-primary-emphasis">Carrera</h4>
+                                        <h4 class="text-success">Desarrollo de Software</h4>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Semestre</h4>
+                                        <h4 class="text-success">1ero</h4>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Turno</h4>
+                                        <h4 class="text-success">Sabados</h4>
+                                    </div>
+
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Promedio</h4>
+                                        <h4 class="text-success">3.5</h4>
+                                    </div>
+                                    <div class="bg-success-subtle rounded-4 text-center ">
+                                        <p class="text-primary-emphasis">Tus intereses nos ayudan a sincronizar con tus
+                                            <a href="#" class="text-decoration-none text-success">cursos a
+                                                desbloquear</a>
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <span class="badge bg-success-subtle text-primary-emphasis pill">Diseño</span>
+                                        <span class="badge bg-success-subtle text-primary-emphasis pill">Power Bi</span>
+                                        <span class="badge bg-success-subtle text-primary-emphasis pill">Excel</span>
+                                        <span class="badge bg-success-subtle text-primary-emphasis pill">Ingles</span>
+                                        <span
+                                            class="badge bg-success-subtle text-primary-emphasis pill">Marketing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="container ">
+                            <div class="row shadow my-3 p-3 rounded-3">
+                                <div class="col-md-6">
+                                    <h4 class="fw-bold">Carrera:</h4>
+                                    <h2 class="text-success fw-bold">Desarrollo de Software</h2><br>
+                                    <h4 class="fw-bold text-center ">Materias:</h4><br>
+                                    <h5 class="text-success fw-bold text-start">Introducción a la Programación <button
+                                            type="button"
+                                            class="btn btn-link text-decoration-none text-primary-emphasis">Ver
+                                            detalle</button></h5><br>
+                                    <h5 class="text-success fw-bold text-start">Lógica de Programación <button
+                                            type="button"
+                                            class="btn btn-link text-decoration-none text-primary-emphasis">Ver
+                                            detalle</button></h5><br>
+                                    <h5 class="text-success fw-bold text-start">Metodologías agiles para la programación
+                                        <button type="button"
+                                            class="btn btn-link text-decoration-none text-primary-emphasis">Ver
+                                            detalle</button>
+                                    </h5><br>
+                                    <button class="btn btn-outline-primary">Completar perfil</button>
+                                    <div class="mt-4">
+                                        <h6 class="text-success">Actualmente vas a la mitad del semestre
+                                        </h6>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">
+                                                50%</div>
+                                        </div>
+                                        <p class="mt-2 text-muted">
+                                            Al tener actualizado tu perfil al 100% podremos enlazarte con oportunidades
+                                            de empleo de acuerdo a tu información.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center ">
+                                        <h4 class="text-primary-emphasis">Nota Global 1er Momento</h4>
+                                        <h4 class="text-success">3.5</h4>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Nota Global 2do Momento</h4>
+                                        <h4 class="text-success">3.5</h4>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Nota Global 3er Momento</h4>
+                                        <h4 class="text-success">En curso</h4>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Promedio</h4>
+                                        <h4 class="text-success">3.5</h4>
+                                    </div>
+                                    <div class="bg-success-subtle rounded-4 text-center ">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-secondary-subtle p-1 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Tu semestre va actualmente</h4>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-2 rounded mb-3 text-center ">
+                                        <img src="./Img/perfil/barra-carga.webp" alt="% semestre" class="img-fluid"
+                                            width="200" height="200">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class=" bg-secondary-subtle p-1 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Performance</h4>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-2 rounded mb-3 text-center ">
+                                        <img src="./Img/perfil/tabla estadistica.png" alt="estadistica notas"
+                                            class="img-fluid" width="auto" height="auto">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        <div class="container ">
+                            <div class="row shadow my-3 p-3 rounded-3">
+                                <div class="col-md-6">
+                                    <h4 class="fw-bold">Cursos virtuales completados</h4>
+                                    <ul class="col-12 col-md-6">
+                                        <li class="media">
+                                            <img src="./Img/perfil/Level A1.jpg" alt="ingles" class="media-object-img">
+                                            <div class="media-body">
+                                                <h5 class="h6 mb-0 mb-1">Ingles Level 1 - 100%</h5>
+                                                <p> <a href="#" class="text-reset">Ver de nuevo</a></p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <img src="./Img/perfil/css1.jpg" alt="CSS" class="media-object-img">
+                                            <div class="media-body">
+                                                <h5 class="h6 mb-0 mb-1">CSS 1 - 100%</h5>
+                                                <p> <a href="#" class="text-reset">Ver de nuevo</a></p>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <img src="./Img/perfil/HTML1.jpg" alt="HTML" class="media-object-img">
+                                            <div class="media-body">
+                                                <h5 class="h6 mb-0 mb-1">HTML 1 - 100%</h5>
+                                                <p> <a href="#" class="text-reset">Ver de nuevo</a></p>
+                                            </div>
+                                        </li>
+                                    </ul><br>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="fw-bold text-center">Cursos virtuales en progreso</h4>
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center ">
+                                        <h6 class="text-primary-emphasis">Curso CSS 2</h6>
+                                        <iframe width="300px" height="180"
+                                            src="https://www.youtube.com/embed/uqkj7HQ7ids"
+                                            title="Curso Basico de CSS - 2. Selectores" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center">
+                                        <h6 class="text-primary-emphasis">Curso HTML 2</h6>
+                                        <iframe width="300px" height="180"
+                                            src="https://www.youtube.com/embed/TNQleomUw6U"
+                                            title="Curso Básico de HTML - 2. Etiquetas para Textos" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="bg-secondary-subtle p-3 rounded mb-3 text-center">
+                                        <h4 class="text-primary-emphasis">Igles 2</h4>
+                                        <iframe width="300" height="180" src="https://www.youtube.com/embed/iFHWC3S2vXY"
+                                            title="Lección 2 - Nivel Intermedio | Curso Vaughan para Aprender Inglés Gratis"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="bg-success-subtle rounded-4 text-center ">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h6 class="text-success">Actualmente vas a la mitad del semestre
+                                    </h6>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">
+                                            50%</div>
+                                    </div>
+                                    <p class="mt-2 text-muted">
+                                        Al tener actualizado tu perfil al 100% podremos enlazarte con oportunidades
+                                        de empleo de acuerdo a tu información.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" text-white py-4">
+        <div class="container">
+            <nav class="row justify-content-center">
+                <!-- Logo -->
+                <a href=""
+                    class="col-12 col-md-3 text-reset d-flex align-items-center justify-content-center mb-3 mb-md-0 text-decoration-none text-uppercase fw-bold">
+                    <img src="./Img/book.png" alt="logo Eduperformance" class="img-logo mr-2 mx-2">
+                    EduPerformance
+                </a>
+                <!-- menu -->
+                <ul class="col-5 col-md-6 list-unstyled text-center align-self-center">
+                    <li class="font-weight-bold">Desarrollado y diseñado por el equipo EduPerformance 2024 © no
+                        copiar</li>
+                </ul>
+                <!-- social networks -->
+                <ul class="col-10 col-md-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase">redes Sociales</li>
+                    <li class="d-flex justify-content-between">
+                        <!-- FB -->
+                        <a href="#" class="text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="#" class="text-reset"><i class="fab  fa-twitter"></i></a>
+                        <!-- Instagram -->
+                        <a href="#" class="text-reset"><i class="fab fa-instagram"></i></a>
+                        <!-- Pinterest -->
+                        <a href="#" class="text-reset"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

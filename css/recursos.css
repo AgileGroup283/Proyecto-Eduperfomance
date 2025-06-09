@@ -1,0 +1,216 @@
+:root {
+    --color-principal-verde: #326C5D;
+    --color-secundario-verde: #508A7A;
+    --color-terciario-verde: #6EA998;
+    --color-claro-verde: #8DC9B7;
+    --color-muy-claro-verde: #ADEAD8;
+
+    --color-fondo-claro: #f8f8f8;
+    --color-texto-oscuro: #333;
+    --color-texto-claro: white;
+    --color-borde-suave: #ddd;
+    --color-enlace-accion: #3498db;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo-claro);
+    color: var(--color-texto-oscuro);
+    line-height: 1.6;
+}
+
+.contenedor-general {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-recursos {
+    background-color: var(--color-principal-verde);
+    color: var(--color-texto-claro);
+    padding: 40px 20px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header-recursos h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-recursos p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* --- Estilos del Menú Desplegable (AJUSTADOS PARA BOOTSTRAP) --- */
+.dropdown-menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.dropdown-toggle-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Sobreescribir estilos de Bootstrap para el dropdown-menu si es necesario */
+.dropdown-menu {
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    border-radius: 5px;
+    overflow: hidden;}
+
+.dropdown-menu .dropdown-item { /* Estilos para los enlaces dentro del dropdown */
+    color: var(--color-texto-oscuro);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--color-muy-claro-verde);
+    color: var(--color-principal-verde);
+}
+/* --- FIN Estilos del Menú Desplegable --- */
+
+
+.contenido-recursos {
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.seccion-material 
+    /* Estilos generales para la sección si es necesario */
+
+
+.categoria-recursos {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--color-borde-suave);
+    padding-bottom: 20px;
+}
+
+.categoria-recursos:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.categoria-recursos h2 {
+    color: var(--color-secundario-verde);
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-claro-verde);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.material-item {
+    background-color: #fefefe;
+    border: 1px solid var(--color-borde-suave);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.material-item h3 {
+    color: var(--color-principal-verde);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.material-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.material-item .btn-descargar,
+.material-item .btn-enlace-externo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-terciario-verde);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.material-item .btn-descargar:hover,
+.material-item .btn-enlace-externo:hover {
+    background-color: var(--color-secundario-verde);
+}
+
+.footer-recursos {
+    background-color: var(--color-principal-verde);
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .contenedor-general {
+        margin: 0 10px;
+        box-shadow: none;
+    }
+    .header-recursos {
+        padding: 30px 15px;
+    }
+    .header-recursos h1 {
+        font-size: 2rem;
+    }
+    .header-recursos p {
+        font-size: 1rem;
+    }
+    .dropdown-menu-container {
+        top: 15px;
+        right: 15px;
+    }
+    .dropdown-toggle-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    .material-item .btn-descargar,
+    .material-item .btn-enlace-externo {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
