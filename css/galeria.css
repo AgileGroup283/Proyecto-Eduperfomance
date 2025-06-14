@@ -14,15 +14,40 @@
 
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: var(--color-fondo-claro);
     color: var(--color-texto-oscuro);
     line-height: 1.6;
 }
 
+.navbar-brand>img {
+    width: 55px;
+    ;
+}
+
+.navbar-main {
+    background-color: #6ea998;
+}
+
+.img-logo {
+    width: 40px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+
+a:hover {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
 .contenedor-general {
     max-width: 1200px; /* Un poco más ancho para la galería */
     margin: 0 auto;
+    margin-top: 100px;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     min-height: 100vh;
@@ -198,6 +223,10 @@ body {
     padding: 20px;
     font-size: 0.9rem;
     margin-top: auto;
+}
+
+footer {
+    background-color: rgb(56, 95, 117);
 }
 
 /* Media Queries para responsividad */
