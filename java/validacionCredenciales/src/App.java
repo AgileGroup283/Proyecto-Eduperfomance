@@ -22,7 +22,7 @@ public class App {
             password = sc.next();
 
             if (username.equals(dataUsername) && password.equals(dataPassword)) {
-                System.out.println("Bienvenido " + nombre);
+                System.out.println("Bienvenido apreciado " + nombre);
                 break; // Sale del bucle si las credenciales son correctas
             } else {
                 remainingAttempts--; // Decrementa los intentos restantes
