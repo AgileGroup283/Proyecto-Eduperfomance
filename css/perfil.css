@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 
@@ -33,6 +33,7 @@ a {
     border: none;
 }
 
+
 .principal {
     margin-top: 100px;
 }
@@ -41,12 +42,13 @@ a {
     background-color: #508a7a;
 }
 
-    .media-object-img{
-        --tamano: 100%;
-        width: var(--tamano);
-        height: var(--tamano);
-        margin-right: 15px;
-    }
+.media-object-img {
+    --tamano: 100%;
+    width: var(--tamano);
+    height: var(--tamano);
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
 
 footer {
     background-color: rgb(56, 95, 117);

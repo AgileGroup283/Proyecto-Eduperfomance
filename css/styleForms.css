@@ -1,11 +1,40 @@
 body {
     color: rgb(4, 56, 87);
     background-color: #326c5d;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+.navbar-brand>img {
+    width: 55px;
+    ;
+}
+
+.navbar-main {
+    background-color: #6ea998;
+}
+
+.img-logo {
+    width: 40px;
+    border: none;
+}
 
 h3 {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+
+a:hover {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.container-principal{
+    margin-top: 120px;
 }
 
 .left {
@@ -13,11 +42,31 @@ h3 {
 }
 
 footer {
-    background-color:rgb(56, 95, 117);
+    background-color: rgb(56, 95, 117);
+}
+
+.social-links {
+    width: 450px;
+    padding: 10px;
 }
 
 
-.img-logo{
+.img-logo {
     width: 40px;
     border: none;
+}
+
+.eslogan {
+    width: 600px;
+    padding: 20px 10px;
+    font-size: 18px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .container-principal {
+        height: 100vh;
+    }
 }

@@ -13,7 +13,7 @@
 
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     min-height: 100vh;
     background-color: var(--color-principal-verde); /* Fondo principal de body */
     display: flex;
