@@ -54,8 +54,8 @@ public class App {
                     case "2": 
                             System.out.println("Hola estudiante");
                             System.out.println("1 - Lógica de programación");
-                            System.out.println("1 - Introducción a la programación");
-                            System.out.println("Metodologías ágiles");
+                            System.out.println("2 - Introducción a la programación");
+                            System.out.println("3 - Metodologías ágiles");
                             break;
                 }
             } else {
