@@ -10,7 +10,7 @@ public class App {
         String password = "";
         int maxAttempts = 3; // Número máximo de intentos
         int remainingAttempts = maxAttempts; // Intentos restantes
-        String nombre = "Alison";
+        String name = "Alison";
 
         System.out.println("Bienvenido a Eduperfomance");
 
@@ -22,7 +22,7 @@ public class App {
             password = sc.next();
 
             if (username.equals(dataUsername) && password.equals(dataPassword)) {
-                System.out.println("Bienvenido apreciado " + nombre);
+                System.out.println("Bienvenido apreciado " + name);
                 break; // Sale del bucle si las credenciales son correctas
             } else {
                 remainingAttempts--; // Decrementa los intentos restantes
